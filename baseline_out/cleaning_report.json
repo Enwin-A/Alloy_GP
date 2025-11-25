@@ -1,0 +1,30 @@
+{
+  "rows_final": 333,
+  "composition_fix": {
+    "rows_al_balance_applied": 333,
+    "rows_full_comp_renorm": 0,
+    "rows_negative_clipped": 0,
+    "rows_adds_gt_100": 0
+  },
+  "base_master": "baseline_out\\BASE_MASTER.csv",
+  "views": {
+    "YS": "baseline_out\\VIEW_YS.csv",
+    "UTS": "baseline_out\\VIEW_UTS.csv",
+    "FractureEL": "baseline_out\\VIEW_FractureEL.csv",
+    "UniformEL": "baseline_out\\VIEW_UniformEL.csv",
+    "YPE": "baseline_out\\VIEW_YPE.csv"
+  },
+  "coverages": {
+    "YS": "baseline_out\\coverage_YS.csv",
+    "UTS": "baseline_out\\coverage_UTS.csv",
+    "FractureEL": "baseline_out\\coverage_FractureEL.csv",
+    "UniformEL": "baseline_out\\coverage_UniformEL.csv",
+    "YPE": "baseline_out\\coverage_YPE.csv"
+  },
+  "labels_needed": "baseline_out\\labels_needed.csv",
+  "notes": [
+    "Homogenization/Recrystallization parsed to seconds and numeric features.",
+    "RAW text retained in *_RAW; ambiguous source columns dropped after parsing.",
+    "Targets are never imputed; use VIEW_<TARGET>.csv for supervised training/synthesis."
+  ]
+}
