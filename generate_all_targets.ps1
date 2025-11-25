@@ -10,8 +10,21 @@ Write-Host "========================================" -ForegroundColor Cyan
 # Common chemistry windows
 $chemWindow = "Mg<=6,Cu<=0.1,Mn<=1.5,Cr<=0.25,Fe<=0.5,Si<=0.5,Zn<=0.25,Ti<=0.15,Zr<=0.15,Sc<=0.3,Ni<=0.1,Other<=0.15"
 
-# Target 1: YS (already complete, skip)
-Write-Host "`n[1/5] YS (Yield Strength): SKIPPING (already complete)" -ForegroundColor Green
+# Target 1: YS
+Write-Host "`n[1/5] YS (Yield Strength): GENERATING..." -ForegroundColor Yellow
+python generate_synthetics_enhanced.py `
+  --view baseline_out/VIEW_YS.csv `
+  --out-dir synth_out/YS `
+  --target-col YS `
+  --group-cols "file_name,alloy,card" `
+  --n-per-class 400 `
+  --chem-window $chemWindow `
+  --seed 42
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "ERROR: YS generation failed!" -ForegroundColor Red
+    exit 1
+}
 
 # Target 2: UTS
 Write-Host "`n[2/5] UTS (Ultimate Tensile Strength): GENERATING..." -ForegroundColor Yellow

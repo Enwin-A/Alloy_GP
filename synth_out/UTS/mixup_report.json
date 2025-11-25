@@ -1,0 +1,68 @@
+{
+  "n_real": 332,
+  "n_target": 5000,
+  "seed": 42,
+  "n_pairs": 6144,
+  "physics_violations_fixed": 325,
+  "composition_sum_mean": 100.0,
+  "composition_sum_std": 1.791874381145124e-14,
+  "ks_tests": {
+    "Al": {
+      "statistic": 0.13068915662650601,
+      "p_value": 4.255210757373919e-05
+    },
+    "Si": {
+      "statistic": 0.25469156626506023,
+      "p_value": 2.801237861879534e-18
+    },
+    "Fe": {
+      "statistic": 0.17072530120481927,
+      "p_value": 2.1061712325896917e-08
+    },
+    "Cu": {
+      "statistic": 0.581,
+      "p_value": 1.0805255571315252e-99
+    },
+    "Mn": {
+      "statistic": 0.17230361445783132,
+      "p_value": 1.4956247212525597e-08
+    },
+    "Mg": {
+      "statistic": 0.1255421686746988,
+      "p_value": 9.758107146364957e-05
+    },
+    "Cr": {
+      "statistic": 0.7921686746987951,
+      "p_value": 2.048132379339278e-205
+    },
+    "Ni": {
+      "statistic": 0.007,
+      "p_value": 1.0
+    },
+    "Zn": {
+      "statistic": 0.9194,
+      "p_value": 2.189e-320
+    },
+    "Ti": {
+      "statistic": 0.7043349397590362,
+      "p_value": 5.908406989409577e-154
+    },
+    "Zr": {
+      "statistic": 0.9836,
+      "p_value": 7.4e-323
+    },
+    "Sc": {
+      "statistic": 0.007,
+      "p_value": 1.0
+    },
+    "Other": {
+      "statistic": 0.007,
+      "p_value": 1.0
+    }
+  },
+  "ks_median_p_value": 1.4956247212525597e-08,
+  "near_duplicates_pct": 95.39999999999999,
+  "diversity_score": 0.0001300012643706827,
+  "lambda_mean": 0.49979574925493514,
+  "lambda_std": 0.2530131263219021
+}
